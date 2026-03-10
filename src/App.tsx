@@ -1,11 +1,11 @@
 import './App.css'
-import {MemoApp} from "./samples/react/fernando_erreras/tema9_hook/useMemo/MemoApp.tsx";
+import {UseCallbackScreen} from "./samples/react/fernando_erreras/tema9_hook/useCallback/UseCallbackScreen.tsx";
 
 function App() {
 
     return (
         <>
-            <MemoApp/>
+            <UseCallbackScreen/>
         </>
     )
 }
