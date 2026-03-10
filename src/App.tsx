@@ -1,11 +1,11 @@
 import './App.css'
-import {CounterPage} from "./samples/react/counter/page/CounterPage.tsx";
+import {SimpleForm} from "./samples/react/fernando_erreras/tema9_hook/useEffect/SimpleForm.tsx";
 
 function App() {
 
     return (
         <>
-            <CounterPage/>
+            <SimpleForm/>
         </>
     )
 }
