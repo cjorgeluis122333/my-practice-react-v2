@@ -24,4 +24,11 @@ Aquí es donde entra el ***useCallback*** dado que dentro es que tú ejecutas la
 }
 ```
 
-Like 
+```tsx
+export const ShowIncrement = React.memo( ({increment}: ShowIncrementArg) => {
+    console.log("I show again") // This command jast execute one time 
+    return (<>
+        <button onClick={()=>{ increment(5)}}>Increment counter</button>
+    </>)
+})
+```

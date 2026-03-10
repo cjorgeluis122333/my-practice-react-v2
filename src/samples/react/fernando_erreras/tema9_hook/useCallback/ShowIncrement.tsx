@@ -4,7 +4,6 @@ interface ShowIncrementArg {
     increment: (valueToIncrement: number) => void;
 }
 
-
 export const ShowIncrement = React.memo( ({increment}: ShowIncrementArg) => {
     console.log("I show again")
     return (<>
