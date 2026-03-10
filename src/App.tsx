@@ -1,11 +1,11 @@
 import './App.css'
-import {SimpleForm} from "./samples/react/fernando_erreras/tema9_hook/useEffect/SimpleForm.tsx";
+import {MemoApp} from "./samples/react/fernando_erreras/tema9_hook/useMemo/MemoApp.tsx";
 
 function App() {
 
     return (
         <>
-            <SimpleForm/>
+            <MemoApp/>
         </>
     )
 }
