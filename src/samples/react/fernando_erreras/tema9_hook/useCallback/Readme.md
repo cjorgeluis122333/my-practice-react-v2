@@ -6,15 +6,23 @@ Cuando tines una función definida en el código cada vez que se ejecuta un comp
 Aquí es donde entra el ***useCallback*** dado que dentro es que tú ejecutas la función
 
 ```tsx
-     export const UseCallbackScreen = () => {
-        const [counter, setCounter] = useState(1)
+import {useEffect} from "react";
+import {toKeyAlias} from "@babel/types";
+import increment = toKeyAlias.increment;
 
-        const increment = useCallback((valueToIncrement: number) => {
+export const UseCallbackScreen = () => {
+    const [counter, setCounter] = useState(1)
+
+    const increment = useCallback((valueToIncrement: number) => {
         //We can not use counter because the component will reconstruct if you select this
         setCounter(oldValue => oldValue + valueToIncrement)
-        }, [setCounter])
+    }, [setCounter])
 
-        return (
+    useEffect(() => {
+        console.log("Si dependo de una funcion esa funcion tiene que ser un useCallback")
+    }, [increment])
+
+    return (
         <>
             <h1>useCallback</h1>
             <h3>Counter: {counter}</h3>
