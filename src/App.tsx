@@ -1,11 +1,11 @@
 import './App.css'
-import {UseCallbackScreen} from "./samples/react/fernando_erreras/tema9_hook/useCallback/UseCallbackScreen.tsx";
+import {Padre} from "./samples/react/fernando_erreras/tema9_hook/ejercicios/Padre.tsx";
 
 function App() {
 
     return (
         <>
-            <UseCallbackScreen/>
+            <Padre/>
         </>
     )
 }
